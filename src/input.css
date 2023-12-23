@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: AquireFont;
+    src: url(./assets/fonts/art.ttf);
+}
+
+@font-face {
+    font-family: NormalFont;
+    src: url(./assets/fonts/muli.ttf);
+}
+
+
+* {
+    font-family: NormalFont;
+    /* border: 1px solid black;
+        box-sizing: border-box; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    width: 5px;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    height: 5px;
+}
+
+/* Track */
+.overflow-y-auto::-webkit-scrollbar-track,
+.overflow-x-auto::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Handle */
+.overflow-y-auto::-webkit-scrollbar-thumb,
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #abb0b4;
+    border-radius: 10px;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.video-container video {
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-container #unimg{
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-container .caption {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: #dc0000;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.titlefont {
+    font-family: AquireFont;
+}
+
+::-moz-selection {
+    background-color: transparent;
+    color: #000;
+}
+
+
+::selection {
+    background-color: transparent;
+    color: #000;
+}
+
+#home {
+    /* background: url(./assets/bitmap.svg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(-10vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+      visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  
