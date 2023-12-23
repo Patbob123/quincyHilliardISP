@@ -1,5 +1,5 @@
 {
-  "name": "trudeauphysicsclub",
+  "name": "quincyhilliard",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,9 @@
     "deploy": "gh-pages -d public"
   },
   "repository": {
-    "url": "git+https://github.com/Trudeau-Physics/TrudeauPhysicsClub.git"
+    "url": "git+https://github.com/Patbob123/quincyHilliardISP.git"
   },
-  "homepage": "https://trudeau-physics.github.io/TrudeauPhysicsClub/",
+  "homepage": "https://quincyHilliardISP.github.io/",
   "dependencies": {
     "@babel/core": "^7.21.4",
     "alpinejs": "^3.13.3",
